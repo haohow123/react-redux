@@ -13,7 +13,7 @@ const middleware = [
 ]//在此將thunk與history串接起來
 
 //偵測是否為開發模式
-if (process.enc.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development') {
     const devToolsExtension = window.devToolsExtension
 
     if (typeof devToolsExtension === 'function') {

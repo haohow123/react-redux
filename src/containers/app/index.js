@@ -3,7 +3,7 @@ import { Route, Link } from 'react-router-dom'
 import Home from '../home'
 import About from '../about'
 
-const App = () => {
+const App = () => (
     <div>
         <header>
             <Link to="/">Home</Link>
@@ -15,4 +15,6 @@ const App = () => {
             <Route exact path="/about-us" component={About} />
         </main>
     </div>
-}
+)
+
+export default App
